@@ -9,9 +9,11 @@
 				<h1>Gaming School Cup</h1>
 				<span class="tagline">Tournoi étudiant français</span>
 			</div>
+				
 			<div class="split-bio">
-				<p>Nous organisons un tournoi où vous pouvez représenter votre formation où école, afin de démontrer quel lycée/université est le meilleur!</p>
+				<p>Nous organisons un tournoi où vous pouvez représenter votre formation ou école, afin de démontrer quel lycée/université est le meilleur!</p>
 			</div>
+			<div style="line-height:60px;font-size:60px;text-align:center;color:white;margin-bottom:40px;margin-left:0;" id="demo"></div>
 			<div class="split-lists">
 				<div class="split-list">
 					<h3>Jeux</h3>
@@ -21,7 +23,7 @@
 						<li><a href="#">H1Z1</a></li>
 					</ul>
 				</div>
-				<div class="split-list">
+				<div style="margin-left:10%;"class="split-list">
 					<h3>Social</h3>
 					<ul>
 						<li><a href="#">Facebook</a></li>
@@ -29,16 +31,26 @@
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</div>
-				<div class="split-list">
-					<h3>Network</h3>
-					<ul>
-						<li><a href="#">Link One</a></li>
-						<li><a href="#">Link Two</a></li>
-						<li><a href="#">Link Three</a></li>
-					</ul>
-				</div>
 			</div>	
 		</div>
 	</div>
 </div>
 </body>
+
+<script>
+		var countDownDate = new Date("Jan 5, 2018 12:00:00").getTime();
+		var x = setInterval(function() {
+  		var now = new Date().getTime();
+  		var distance = countDownDate - now;
+  		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  		document.getElementById("demo").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  			if (distance < 0) {
+    		clearInterval(x);
+    		document.getElementById("demo").innerHTML = "EXPIRED";
+  			}
+		}, 1000);
+		</script>
