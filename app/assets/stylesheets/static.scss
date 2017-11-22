@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'GeBody';    
+  src: font-url('GeBody.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import url("https://fonts.googleapis.com/css?family=Lora");
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
@@ -175,6 +181,7 @@ body.page-template-page-fullsingle-split {
     letter-spacing: 0.4px;
     color: #47bec7; }
   .split-intro .tagline {
+    font-family: "GeBody";
     color: #CCCCCC; }
 
 .split-bio {
