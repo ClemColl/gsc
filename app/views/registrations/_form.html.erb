@@ -1,0 +1,170 @@
+<%= form_for(@registration) do |f| %>
+  <% if registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+      <% registration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div>
+  <div class="field" hidden>
+    <%= f.label :jeu %>
+    <%= f.text_field :jeu, value: params["gameName"] %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Nom de l'équipe" %>
+    <%= f.text_field :equipe %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Nom de l'école" %>
+    <%= f.text_field :ecole %>
+  </div>
+</div>
+
+<div style="display:flex;justify-content:center;">
+  <div>
+    <div class="field">
+      <%= f.label "Pseudo" %>
+      <%= f.text_field :pseudo1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label "Email" %>
+      <%= f.text_field :email1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label "Date de naissance" %>
+      <%= f.date_select :bdate1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :id1 %>
+      <%= f.text_field :id1 %>
+    </div>
+  </div>
+
+  <div>
+    <div class="field">
+      <%= f.label :pseudo2 %>
+      <%= f.text_field :pseudo2 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email2 %>
+      <%= f.text_field :email2 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :bdate2 %>
+      <%= f.date_select :bdate2 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :id2 %>
+      <%= f.text_field :id2 %>
+    </div>
+  </div>
+<% unless params["gameName"] == "RL" %>
+  <div>
+    <div class="field">
+      <%= f.label :pseudo3 %>
+      <%= f.text_field :pseudo3 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email3 %>
+      <%= f.text_field :email3 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :bdate3 %>
+      <%= f.date_select :bdate3 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :id3 %>
+      <%= f.text_field :id3 %>
+    </div>
+  </div>
+
+  <div>
+    <div class="field">
+      <%= f.label :pseudo4 %>
+      <%= f.text_field :pseudo4 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email4 %>
+      <%= f.text_field :email4 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :bdate4 %>
+      <%= f.date_select :bdate4 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :id4 %>
+      <%= f.text_field :id4 %>
+    </div>
+  </div>
+
+  <div>
+    <div class="field">
+      <%= f.label :pseudo5 %>
+      <%= f.text_field :pseudo5 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email5 %>
+      <%= f.text_field :email5 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :bdate5 %>
+      <%= f.date_select :bdate5 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :id5 %>
+      <%= f.text_field :id5 %>
+    </div>
+  </div>
+<% if params["gameName"] == "OW" %>
+  <div>
+    <div class="field">
+      <%= f.label :pseudo6 %>
+      <%= f.text_field :pseudo6 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email6 %>
+      <%= f.text_field :email6 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :bdate6 %>
+      <%= f.date_select :bdate6 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :id6 %>
+      <%= f.text_field :id6 %>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

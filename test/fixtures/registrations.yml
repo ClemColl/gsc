@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jeu: MyString
+  equipe: MyString
+  ecole: MyString
+  pseudo1: MyString
+  email1: MyString
+  bdate1: 2017-12-05
+  id1: MyString
+  pseudo2: MyString
+  email2: MyString
+  bdate2: 2017-12-05
+  id2: MyString
+  pseudo3: MyString
+  email3: MyString
+  bdate3: 2017-12-05
+  id3: MyString
+  pseudo3: MyString
+  email3: MyString
+  bdate3: 2017-12-05
+  id3: MyString
+  pseudo4: MyString
+  email4: MyString
+  bdate4: 2017-12-05
+  id4: MyString
+  pseudo5: MyString
+  email5: MyString
+  bdate5: 2017-12-05
+  id5: MyString
+  pseudo6: MyString
+  email6: MyString
+  bdate6: 2017-12-05
+  id6: MyString
+
+two:
+  jeu: MyString
+  equipe: MyString
+  ecole: MyString
+  pseudo1: MyString
+  email1: MyString
+  bdate1: 2017-12-05
+  id1: MyString
+  pseudo2: MyString
+  email2: MyString
+  bdate2: 2017-12-05
+  id2: MyString
+  pseudo3: MyString
+  email3: MyString
+  bdate3: 2017-12-05
+  id3: MyString
+  pseudo3: MyString
+  email3: MyString
+  bdate3: 2017-12-05
+  id3: MyString
+  pseudo4: MyString
+  email4: MyString
+  bdate4: 2017-12-05
+  id4: MyString
+  pseudo5: MyString
+  email5: MyString
+  bdate5: 2017-12-05
+  id5: MyString
+  pseudo6: MyString
+  email6: MyString
+  bdate6: 2017-12-05
+  id6: MyString

@@ -1,0 +1,11 @@
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<%= link_to "S'inscrire sur LoL", new_registration_path(:gameName => "LOL") %>
+<br>
+<%= link_to "S'inscrire sur Csgo", new_registration_path(:gameName => "CSGO") %>
+<br>
+<%= link_to "S'inscrire sur Overwatch", new_registration_path(:gameName => "OW") %>
+<br>
+<%= link_to "S'inscrire sur Rocket League", new_registration_path(:gameName => "RL") %>
