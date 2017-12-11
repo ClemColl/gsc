@@ -69,14 +69,8 @@ img.aligncenter {
   margin-left: auto; }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #00002E;
   border-style: none; }
-
-body,
-p,
-a,
-a:hover {
-  color: #000000; }
 
 a,
 a:hover {
@@ -179,7 +173,7 @@ body.page-template-page-fullsingle-split {
     line-height: 16px;
     margin-bottom: 40px;
     letter-spacing: 0.4px;
-    color: #47bec7; }
+    color: #FFD400; }
   .split-intro .tagline {
     font-family: "GeBody";
     color: #CCCCCC; }
@@ -200,9 +194,9 @@ body.page-template-page-fullsingle-split {
     transition-duration: 0.5s;
     border-bottom: 1px dotted #848d96; }
     .split-bio a:hover {
-      color: #CA486d;
+      color: #FFD400;
       transition-duration: 0.1s;
-      border-bottom: 1px dotted #CA486d; }
+      border-bottom: 1px dotted #FFD400; }
 
 .split-lists .split-list {
   width: 30%;
@@ -228,51 +222,51 @@ body.page-template-page-fullsingle-split {
       color: #848d96;
       transition-duration: 0.5s; }
       .split-lists .split-list ul li a:hover {
-        color: #CA486d;
+        color: #FFD400;
         transition-duration: 0.1s; }
 
-.split-credit {
-  opacity: 0.4; }
-  .split-credit p {
-    font-size: 12px;
-    line-height: 14px; }
-    .split-credit p a {
-      color: #848d96; }
+// Page Games
 
-.split-video {
-  overflow: hidden;
-  position: relative; }
+#h1-games {
+  font-size:60px;
+  font-family: "GeBody";
+  color:white;
+  text-align: center;
+  margin-top:25px;
+}
 
-.video-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+#p-games {
+  font-size:24px;
+  font-family: "Nunito Sans";
+  color:#FFD400;
+  text-align: center;
+  margin-top:30px;
+}
 
-.video-container {
-  position: relative;
-  overflow: hidden;
-  height: 56.25vw;
-  width: 100vw; }
-  @media (max-aspect-ratio: 16 / 9) {
-    .video-container {
-      height: 100vh;
-      width: 177.7777777778vh; } }
+.game-container1 {
+  text-align:center;
+  margin:auto;
+  margin-top:60px;
+  margin-bottom:50px;
+}
+.game-container2{
+  text-align:center;
+  margin:auto;
+  margin-top:50px;
+}
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+.link-lol {
+  margin-right:50px;
+}
 
-video.video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  width: 100%;
-  height: 100%; }
+.link-cs {
+  margin-left:50px;
+}
+
+.link-ow {
+  margin-right:50px;
+}
+
+.link-rl {
+  margin-left:50px;
+}

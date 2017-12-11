@@ -2,10 +2,25 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 
-<%= link_to "S'inscrire sur LoL", new_registration_path(:gameName => "LOL") %>
-<br>
-<%= link_to "S'inscrire sur Csgo", new_registration_path(:gameName => "CSGO") %>
-<br>
-<%= link_to "S'inscrire sur Overwatch", new_registration_path(:gameName => "OW") %>
-<br>
-<%= link_to "S'inscrire sur Rocket League", new_registration_path(:gameName => "RL") %>
+<h1 id="h1-games">Inscription</h1>
+<p id="p-games">Choisissez un jeu</p>
+
+<div class="game-container1">
+    <%= link_to new_registration_path(:gameName => "LOL"), class: "link-lol" do %>
+        <%= image_tag('lol-icon.png') %>
+    <% end %>
+
+    <%= link_to new_registration_path(:gameName => "CSGO"), class: "link-cs" do %>
+        <%= image_tag('cs-icon.png') %>
+    <% end %>
+</div>
+
+<div class="game-container2">
+    <%= link_to new_registration_path(:gameName => "OW"), class: "link-ow" do %>
+        <%= image_tag('ow-icon.png') %>
+    <% end %>
+
+    <%= link_to new_registration_path(:gameName => "RL"), class: "link-rl" do %>
+        <%= image_tag('rl-icon.png') %>
+    <% end %>
+</div>
