@@ -69,7 +69,7 @@ img.aligncenter {
   margin-left: auto; }
 
 body {
-  background-color: #00002E;
+  background-color: #000015;
   border-style: none; }
 
 a,
@@ -92,10 +92,10 @@ a:hover {
     opacity: 1; } }
 
 html {
-  background-color:#00002E; }
+  background-color:#000015; }
 
 body.page-template-page-fullsingle-split {
-  background-color:#00002E;
+  background-color:#000015;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -130,8 +130,9 @@ body.page-template-page-fullsingle-split {
 
     @media (max-width: 800px) {
       .fs-split .split-image {
-        height: 80vh;
-        width: 100%; } }
+        height: 55vh;
+        width: 100%;
+        background-size: 40%; } }
   .fs-split .split-content {
     width: 50%;
     min-height: 100vh;
@@ -175,8 +176,12 @@ body.page-template-page-fullsingle-split {
     letter-spacing: 0.4px;
     color: #FFD400; }
   .split-intro .tagline {
+    display: inherit;
     font-family: "GeBody";
-    color: #CCCCCC; }
+    color: #FFF;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: normal; }
 
 .split-bio {
   padding: 40px 0 40px 0;
@@ -201,6 +206,7 @@ body.page-template-page-fullsingle-split {
 .split-lists .split-list {
   width: 30%;
   display: inline-block;
+  margin-top: 20px;
   margin-bottom: 40px; }
   @media (max-width: 500px) {
     .split-lists .split-list {
