@@ -123,14 +123,15 @@ body.page-template-page-fullsingle-split {
   .fs-split .split-image {
     width: 50%;
     height: 100vh;
-    background-image: image-url("logomin.png");
-    background-size:70%;
+    background-image: image-url("logogif.gif");
+    background-size:50%;
     background-position: center center;
     background-repeat:no-repeat; }
 
     @media (max-width: 800px) {
       .fs-split .split-image {
-        height: 55vh;
+        background-image: image-url("logomin.png");
+        height: 45vh;
         width: 100%;
         background-size: 40%; } }
   .fs-split .split-content {
