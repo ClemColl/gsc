@@ -11,7 +11,18 @@
     </div>
   <% end %>
 
-<div>
+<% if params["gameName"] == "RL"
+  labelId = "Steam ID"
+  elsif params["gameName"] == "OW"
+  labelId = "BattleTag"
+  elsif params["gameName"] == "CSGO"
+  labelId = "Steam ID"
+  elsif params["gameName"] == "LOL"
+  labelId = "Nom d'Invocateur"
+end %>
+
+
+<div class="common">
   <div class="field" hidden>
     <%= f.label :jeu %>
     <%= f.text_field :jeu, value: params["gameName"] %>
@@ -31,6 +42,7 @@
 <div style="display:flex;justify-content:center;">
   <div>
     <div class="field">
+    <h3>Joueur 1</h3>
       <%= f.label "Pseudo" %>
       <%= f.text_field :pseudo1 %>
     </div>
@@ -46,117 +58,122 @@
     </div>
 
     <div class="field">
-      <%= f.label :id1 %>
+      <%= f.label labelId %>
       <%= f.text_field :id1 %>
     </div>
   </div>
 
   <div>
+    <h3>Joueur 2</h3>
     <div class="field">
-      <%= f.label :pseudo2 %>
+      <%= f.label "Pseudo" %>
       <%= f.text_field :pseudo2 %>
     </div>
 
     <div class="field">
-      <%= f.label :email2 %>
+      <%= f.label "Email" %>
       <%= f.text_field :email2 %>
     </div>
 
     <div class="field">
-      <%= f.label :bdate2 %>
+      <%= f.label "Date de naissance" %>
       <%= f.date_select :bdate2 %>
     </div>
 
     <div class="field">
-      <%= f.label :id2 %>
+      <%= f.label labelId %>
       <%= f.text_field :id2 %>
     </div>
   </div>
 <% unless params["gameName"] == "RL" %>
   <div>
+    <h3>Joueur 3</h3>
     <div class="field">
-      <%= f.label :pseudo3 %>
+      <%= f.label "Pseudo" %>
       <%= f.text_field :pseudo3 %>
     </div>
 
     <div class="field">
-      <%= f.label :email3 %>
+      <%= f.label "Email" %>
       <%= f.text_field :email3 %>
     </div>
 
     <div class="field">
-      <%= f.label :bdate3 %>
+      <%= f.label "Date de naissance" %>
       <%= f.date_select :bdate3 %>
     </div>
 
     <div class="field">
-      <%= f.label :id3 %>
+      <%= f.label labelId %>
       <%= f.text_field :id3 %>
     </div>
   </div>
 
   <div>
+    <h3>Joueur 4</h3>
     <div class="field">
-      <%= f.label :pseudo4 %>
+      <%= f.label "Pseudo" %>
       <%= f.text_field :pseudo4 %>
     </div>
 
     <div class="field">
-      <%= f.label :email4 %>
+      <%= f.label "Email" %>
       <%= f.text_field :email4 %>
     </div>
 
     <div class="field">
-      <%= f.label :bdate4 %>
+      <%= f.label "Date de naissance" %>
       <%= f.date_select :bdate4 %>
     </div>
 
     <div class="field">
-      <%= f.label :id4 %>
+      <%= f.label labelId %>
       <%= f.text_field :id4 %>
     </div>
   </div>
 
   <div>
+    <h3>Joueur 5</h3>
     <div class="field">
-      <%= f.label :pseudo5 %>
+      <%= f.label "Pseudo" %>
       <%= f.text_field :pseudo5 %>
     </div>
 
     <div class="field">
-      <%= f.label :email5 %>
+      <%= f.label "Email" %>
       <%= f.text_field :email5 %>
     </div>
 
     <div class="field">
-      <%= f.label :bdate5 %>
+      <%= f.label "Date de naissance" %>
       <%= f.date_select :bdate5 %>
     </div>
 
     <div class="field">
-      <%= f.label :id5 %>
+      <%= f.label labelId %>
       <%= f.text_field :id5 %>
     </div>
   </div>
 <% if params["gameName"] == "OW" %>
   <div>
+    <h3>Joueur 6</h3>
     <div class="field">
-      <%= f.label :pseudo6 %>
+      <%= f.label "Pseudo" %>
       <%= f.text_field :pseudo6 %>
     </div>
 
     <div class="field">
-      <%= f.label :email6 %>
+      <%= f.label "Email" %>
       <%= f.text_field :email6 %>
     </div>
 
     <div class="field">
-      <%= f.label :bdate6 %>
+      <%= f.label "Date de naissance" %>
       <%= f.date_select :bdate6 %>
     </div>
 
     <div class="field">
-      <%= f.label :id6 %>
+      <%= f.label labelId %>
       <%= f.text_field :id6 %>
     </div>
   </div>
@@ -165,6 +182,6 @@
 </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "ENREGISTRER" %>
   </div>
 <% end %>
