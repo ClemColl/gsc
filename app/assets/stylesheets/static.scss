@@ -24,7 +24,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
@@ -275,4 +274,16 @@ body.page-template-page-fullsingle-split {
 
 .link-rl {
   margin-left:50px;
+}
+
+#notice {
+  text-align:center;
+  font-size:20px;
+  background-color:#9CCC65;
+  border: 1px solid #558B2F;
+  font-family: 'Gill Sans', 'Gill Sans MT'
+}
+
+p {
+  line-height: 30px;
 }
