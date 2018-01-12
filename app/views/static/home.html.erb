@@ -6,7 +6,7 @@
 	<div class="split-content">
 		<div class="split-content-vertically-center">
 			<div class="split-intro">
-				<span class="tagline">Tournoi étudiant français</span>
+				<h1 class="tagline">Tournoi étudiant français</h1>
 			</div>
 				
 			<div class="split-bio">
@@ -27,9 +27,9 @@
 					<h3>Liens</h3>
 					<ul>
 						<li><a target="_blank" href="https://twitter.com/GamingSchoolCup">Twitter</a></li>
-						<li><a target="_blank" href="#">Twitch</a></li>
+						<li><a target="_blank" href="https://www.twitch.tv/gamingschoolcup">Twitch</a></li>
+						<li><a target="_blank" href="https://discord.gg/YSCr5nm">Discord</a></li>
 						<li><a href="mailto:gamingschoolcup@gmail.com">Contact</a></li>
-						<li><a href="#">Mentions Légales</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -39,19 +39,18 @@
 </body>
 
 <script>
-		var countDownDate = new Date("Jan 20, 2018 12:00:00").getTime();
+		var countDownDate = new Date("Jan 20, 2018 14:00:00").getTime();
 		var x = setInterval(function() {
   		var now = new Date().getTime();
   		var distance = countDownDate - now;
   		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  		document.getElementById("demo").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+  		document.getElementById("demo").innerHTML = days + "j " + hours + "h " + minutes + "m ";
 
   			if (distance < 0) {
     		clearInterval(x);
-    		document.getElementById("demo").innerHTML = "EXPIRED";
+    		document.getElementById("demo").innerHTML = "En cours";
   			}
 		}, 1000);
 		</script>
