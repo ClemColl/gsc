@@ -309,3 +309,25 @@ body.page-template-page-fullsingle-split {
 p {
   line-height: 30px;
 }
+
+#linkGames {
+  display:block;
+  text-align:center;
+  width:100%;
+  margin-bottom:30px;
+}
+
+#aLinkGames {
+  display:inline;
+  color:#FFD400;
+  border-radius:5px;
+  padding:5px;
+  font-size:30px;
+  text-transform:uppercase;
+  border:1px solid #FFD400;
+}
+
+#aLinkGames:hover {
+  background-color:#FFD400;
+  color:white;
+}
