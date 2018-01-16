@@ -270,32 +270,35 @@ body.page-template-page-fullsingle-split {
   margin-top:30px;
 }
 
-.game-container1 {
+p {
+  font-family: "Nunito Sans";
+}
+
+.warning {
+  color:red;
+  text-align: center;
+}
+
+#game-container1 {
   text-align:center;
   margin:auto;
-  margin-top:60px;
-  margin-bottom:50px;
-}
-.game-container2{
-  text-align:center;
-  margin:auto;
-  margin-top:50px;
+  margin-top:70px;
+  margin-bottom:70px;
 }
 
-.link-lol {
-  margin-right:50px;
+.regle {
+  text-align: center;
 }
 
-.link-cs {
-  margin-left:50px;
+.game {
+  display:inline-block;
+  margin-left:20px;
+  margin-right:20px;
+  
 }
 
-.link-ow {
-  margin-right:50px;
-}
-
-.link-rl {
-  margin-left:50px;
+.game p {
+  text-align: left;
 }
 
 #notice {
@@ -321,7 +324,7 @@ p {
   display:inline;
   color:#FFD400;
   border-radius:5px;
-  padding:5px;
+  padding:8px 12px;
   font-size:30px;
   text-transform:uppercase;
   border:1px solid #FFD400;
@@ -330,4 +333,8 @@ p {
 #aLinkGames:hover {
   background-color:#FFD400;
   color:white;
+}
+
+.imgGames {
+  width:150px;
 }
