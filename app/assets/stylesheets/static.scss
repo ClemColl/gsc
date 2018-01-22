@@ -98,7 +98,7 @@ html {
   background-color:#000015; }
 
 body.page-template-page-fullsingle-split {    
-  background-image: -webkit-linear-gradient(-11deg, #000015 43%, #000010 43%);
+  background-image: -webkit-linear-gradient(-11deg, #000015 43%, #000000 43%);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -112,22 +112,22 @@ body.page-template-page-fullsingle-split {
 
 @media screen and (min-width: 550px) and (max-width: 800px) {
   body.page-template-page-fullsingle-split { 
-  background-image: -webkit-linear-gradient(-83deg, #000015 33%, #00000E 32%);
+  background-image: -webkit-linear-gradient(-83deg, #000015 33%, #000000 32%);
   }
 }
 @media screen and (min-width: 500px) and (max-width: 549px) {
   body.page-template-page-fullsingle-split { 
-  background-image: -webkit-linear-gradient(-83deg, #000015 30%, #00000E 29%);
+  background-image: -webkit-linear-gradient(-83deg, #000015 30%, #000000 29%);
   }
 }
 @media screen and (min-width: 400px) and (max-width: 499px) {
   body.page-template-page-fullsingle-split { 
-  background-image: -webkit-linear-gradient(-83deg, #000015 25%, #00000E 24%);
+  background-image: -webkit-linear-gradient(-83deg, #000015 25%, #000000 24%);
   }
 }
 @media (max-width: 399px) {
 body.page-template-page-fullsingle-split { 
-  background-image: -webkit-linear-gradient(-83deg, #000015 20%, #00000E 19%);
+  background-image: -webkit-linear-gradient(-83deg, #000015 20%, #000000 19%);
   }
 .split-intro .tagline {
     font-size: 28px;
