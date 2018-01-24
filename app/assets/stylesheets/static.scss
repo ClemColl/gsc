@@ -333,3 +333,9 @@ p {
 .imgGames {
   width:150px;
 }
+
+.game:nth-child(3) {
+  opacity: 0.2;
+  pointer-events: none;
+  cursor: default;
+}
